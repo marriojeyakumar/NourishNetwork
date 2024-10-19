@@ -10,11 +10,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class BusinessLoginActivity extends AppCompatActivity {
+public class VolunteerLoginActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_business_login);
+        setContentView(R.layout.activity_volunteer_login);
     }
 
     public void login(View view) {
