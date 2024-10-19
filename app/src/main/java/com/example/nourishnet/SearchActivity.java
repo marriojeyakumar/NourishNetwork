@@ -16,7 +16,7 @@ public class SearchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_volunteer_profile);
+        setContentView(R.layout.activity_search);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.bottom_profile);
@@ -25,9 +25,7 @@ public class SearchActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 if (id == R.id.bottom_profile) {
-                    navigateToActivity(VolunteerProfileActivity.class);
-                    return true;
-                } else if (id == R.id.bottom_search) {
+                    navigateToProfile(VolunteerProfileActivity.class);
                     return true;
                 }
 
@@ -36,8 +34,8 @@ public class SearchActivity extends AppCompatActivity {
         });
     }
 
-    private void navigateToActivity(Class<?> activityClass) {
-        Intent intent = new Intent(this, activityClass);
+    private void navigateToProfile(Class<?> activityClass) {
+        Intent intent = new Intent(this, VolunteerProfileActivity.class);
         intent.putExtra("email", userEmail);
         startActivity(intent);
     }
