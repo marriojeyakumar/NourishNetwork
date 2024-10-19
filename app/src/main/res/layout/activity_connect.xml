@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ConnectActivity">
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/professionalContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <!-- Hardcoded Item 1 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon1"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon1"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="Marlborough Food Pantry"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName1"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon1"
+                    android:text="Non-perishable food items"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription1"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon1"
+                    android:text="9101 Hollywood Blvd, Los Angeles, CA 90046"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Hardcoded Item 2 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon2"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon2"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="Hudson Soup Kitchens"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName2"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon2"
+                    android:text="Fresh fruits and vegetables"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription2"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon2"
+                    android:text="3456 Venice Blvd, Los Angeles, CA 90019"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Hardcoded Item 3 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon3"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon3"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="St. Matthias Church"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName3"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon3"
+                    android:text="Prepared meals and snacks"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription3"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon3"
+                    android:text="5678 Sunset Blvd, Los Angeles, CA 90028"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Hardcoded Item 4 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon4"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon4"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="Food for All"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName4"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon4"
+                    android:text="Baked goods and bread"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription4"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon4"
+                    android:text="1234 Wilshire Blvd, Los Angeles, CA 90017"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Hardcoded Item 5 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon5"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon5"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="Community Care Center"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName5"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon5"
+                    android:text="Hot meals and canned food"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription5"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon5"
+                    android:text="8900 S Figueroa St, Los Angeles, CA 90003"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Hardcoded Item 6 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon6"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon6"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="City Homeless Shelter"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName6"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon6"
+                    android:text="Prepared meals and bottled water"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription6"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon6"
+                    android:text="321 Main St, Los Angeles, CA 90012"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Hardcoded Item 7 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon7"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon7"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="Westside Food Bank"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName7"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon7"
+                    android:text="Non-perishable food items"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription7"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon7"
+                    android:text="1710 22nd St, Santa Monica, CA 90404"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bottom_menu_bg"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/nav_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/business_menu" />
+
+</RelativeLayout>

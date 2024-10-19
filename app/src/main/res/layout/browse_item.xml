@@ -12,16 +12,6 @@
         android:src="@drawable/profile_icon" />
 
     <TextView
-        android:id="@+id/textViewYearsOfExperience"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/profile_icon"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="6dp"
-        android:text="None years"
-        android:textSize="12sp" />
-
-    <TextView
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +31,7 @@
         android:layout_marginStart="7dp"
         android:layout_marginTop="8dp"
         android:layout_toEndOf="@id/profile_icon"
-        android:text="About me"
+        android:text="Foods"
         android:textSize="12sp" />
 
     <TextView
@@ -51,7 +41,6 @@
         android:layout_below="@id/textViewDescription"
         android:layout_marginStart="11dp"
         android:layout_marginTop="8dp"
-        android:layout_toEndOf="@id/textViewYearsOfExperience"
         android:text="Location"
         android:textColor="@color/dark_grey"
         android:textSize="14sp"

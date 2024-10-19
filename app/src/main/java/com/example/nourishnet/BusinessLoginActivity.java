@@ -34,10 +34,10 @@ public class BusinessLoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         // Initialize UI elements
-        emailEditText = findViewById(R.id.emailEditText);
-        passwordEditText = findViewById(R.id.passwordEditText);
+        emailEditText = findViewById(R.id.email);
+        passwordEditText = findViewById(R.id.password);
         buttonLogIn = findViewById(R.id.signUpButton);
-        buttonSignUp = findViewById(R.id.loginButton);
+        buttonSignUp = findViewById(R.id.logInButton);
     }
 
     // Method for logging in
