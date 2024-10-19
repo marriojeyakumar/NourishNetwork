@@ -41,7 +41,6 @@ public class BusinessDetailedSignupActivity extends AppCompatActivity {
         editTextBusinessType = findViewById(R.id.editTextBusinessType);
         editTextBusinessAddress = findViewById(R.id.editTextBusinessAddress);
         editTextContactPerson = findViewById(R.id.editTextContactPerson);
-        editTextContactEmail = findViewById(R.id.editTextContactEmail);
         editTextContactPhone = findViewById(R.id.editTextContactPhone);
         editTextSurplusTypes = findViewById(R.id.editTextSurplusTypes);
         editTextSurplusQuantity = findViewById(R.id.editTextSurplusQuantity);
@@ -56,6 +55,7 @@ public class BusinessDetailedSignupActivity extends AppCompatActivity {
         Intent prevIntent = getIntent();
         email = prevIntent.getStringExtra("email");
         password = prevIntent.getStringExtra("password");
+        Log.d("JohnJohnJohnJohnJohn", "submitForm: Submitting business data.");
     }
 
     // Method to submit form
@@ -109,7 +109,7 @@ public class BusinessDetailedSignupActivity extends AppCompatActivity {
                 });
 
         // Optionally register user with Firebase Auth
-        auth.createUserWithEmailAndPassword(contactEmail, password)
+        auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
