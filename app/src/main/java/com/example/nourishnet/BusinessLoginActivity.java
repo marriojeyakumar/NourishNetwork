@@ -45,56 +45,14 @@ public class BusinessLoginActivity extends AppCompatActivity {
         email = emailEditText.getText().toString();
         password = passwordEditText.getText().toString();
 
-        // Validate fields
-        if (email.isEmpty() || password.isEmpty()) {
-            alert("Please fill out both fields.");
-            return;
-        }
+        Intent intent = new Intent(this, BusinessProfileActivity.class);
+        intent.putExtra("email", email);
+        startActivity(intent);
 
-        // Authenticate user with Firebase
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Login success, update UI with user's information
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            Log.d(TAG, "signInWithEmail:success");
-                            updateUI(user);
-                        } else {
-                            // If sign in fails, show error
-                            Log.w(TAG, "signInWithEmail:failure", task.getException());
-                            alert("Authentication failed.");
-                            updateUI(null);
-                        }
-                    }
-                });
+
     }
 
     // Method for forgot password
-    public void forgotPassword(View view) {
-        email = emailEditText.getText().toString();
-
-        if (email.isEmpty()) {
-            alert("Please enter your email.");
-            return;
-        }
-
-        // Send password reset email
-        mAuth.sendPasswordResetEmail(email)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            Log.d(TAG, "sendPasswordResetEmail:success");
-                            alert("Password reset email sent.");
-                        } else {
-                            Log.w(TAG, "sendPasswordResetEmail:failure", task.getException());
-                            alert("Error sending password reset email.");
-                        }
-                    }
-                });
-    }
 
     // Method to go to the signup page
     public void goToSignup(View view) {
