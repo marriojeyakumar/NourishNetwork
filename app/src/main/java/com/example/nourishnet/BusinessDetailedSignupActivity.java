@@ -120,5 +120,7 @@ public class BusinessDetailedSignupActivity extends AppCompatActivity {
                         }
                     }
                 });
+        Intent intent = new Intent(this, BusinessLoginActivity.class);
+        startActivity(intent);
     }
 }

@@ -121,7 +121,6 @@ public class VolunteerDetailedSignupActivity extends AppCompatActivity {
                     }
                 });
 
-        // Optionally register user with Firebase Auth
         auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -133,5 +132,7 @@ public class VolunteerDetailedSignupActivity extends AppCompatActivity {
                         }
                     }
                 });
+        Intent intent = new Intent(this, VolunteerLoginActivity.class);
+        startActivity(intent);
     }
 }
