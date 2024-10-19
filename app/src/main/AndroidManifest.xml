@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NourishNet"
         tools:targetApi="31" >
-        <activity
-            android:name=".VolunteerSignupActivity"
-            android:exported="false"
-            android:theme="@style/Theme.NourishNet" />
+<!--        <activity-->
+<!--            android:name=".VolunteerSignupActivity"-->
+<!--            android:exported="false"-->
+<!--            android:theme="@style/Theme.NourishNet" />-->
         <activity
             android:name=".VolunteerLoginActivity"
             android:exported="false" />
