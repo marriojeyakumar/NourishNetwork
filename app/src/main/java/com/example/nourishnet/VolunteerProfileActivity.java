@@ -72,7 +72,7 @@ public class VolunteerProfileActivity extends AppCompatActivity {
     }
 
     private void fetchVolunteerProfileData(String email) {
-        db.collection("volunteers").document(email).get().addOnCompleteListener(task -> {
+        db.collection("volunteerOrganizations").document(email).get().addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 DocumentSnapshot document = task.getResult();
                 if (document.exists()) {
