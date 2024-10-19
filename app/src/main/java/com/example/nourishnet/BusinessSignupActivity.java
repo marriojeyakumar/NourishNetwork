@@ -24,7 +24,7 @@ public class BusinessSignupActivity extends AppCompatActivity {
     }
 
     public void backToLogin(View view) {
-        Intent intent = new Intent(getApplicationContext(), BusinessLoginActivity.class);
+        Intent intent = new Intent(this, BusinessLoginActivity.class);
         startActivity(intent);
     }
 }

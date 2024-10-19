@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class VolunteerProfileActivity extends AppCompatActivity {
+public class SearchActivity extends AppCompatActivity {
     String userEmail;
 
     @Override
@@ -25,9 +25,9 @@ public class VolunteerProfileActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 if (id == R.id.bottom_profile) {
+                    navigateToActivity(VolunteerProfileActivity.class);
                     return true;
                 } else if (id == R.id.bottom_search) {
-                    navigateToActivity(SearchActivity.class);
                     return true;
                 }
 

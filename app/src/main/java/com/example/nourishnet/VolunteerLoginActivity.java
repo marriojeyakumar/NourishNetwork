@@ -19,11 +19,12 @@ public class VolunteerLoginActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
-
+        Intent intent = new Intent(this, VolunteerProfileActivity.class);
+        startActivity(intent);
     }
 
     public void goToSignup(View view) {
-        Intent intent = new Intent(getApplicationContext(), VolunteerSignupActivity.class);
+        Intent intent = new Intent(this, VolunteerSignupActivity.class);
         startActivity(intent);
     }
 

@@ -22,7 +22,7 @@ public class BusinessLoginActivity extends AppCompatActivity {
     }
 
     public void goToSignup(View view) {
-        Intent intent = new Intent(getApplicationContext(), BusinessSignupActivity.class);
+        Intent intent = new Intent(this, BusinessSignupActivity.class);
         startActivity(intent);
     }
 
