@@ -28,28 +28,19 @@
                     android:id="@+id/profileIcon"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_centerVertical="true" />
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/profile_icon" />
 
                 <TextView
                     android:id="@+id/textViewBusinessName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="None"
+                    android:text="Panera Bread"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
                     android:layout_toEndOf="@+id/profileIcon"
                     android:textSize="30sp" />
-
-                <Button
-                    android:id="@+id/buttonEditProfile"
-                    android:layout_toEndOf="@+id/profileIcon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:text="Edit Profile"
-                    android:textColor="@color/white"
-                    android:backgroundTint="@color/orange"/>
             </RelativeLayout>
 
             <!-- Business Information Section -->
@@ -79,7 +70,7 @@
                         android:id="@+id/textViewBusinessType"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Business Type: None" />
+                        android:text="Business Type: Bakery-Café" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -92,7 +83,7 @@
                         android:id="@+id/textViewBusinessAddress"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Address: None" />
+                        android:text="Address: 1234 Wilshire Blvd, Los Angeles, CA 90017" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -105,14 +96,14 @@
                         android:id="@+id/textViewContactPerson"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Contact Person: None" />
+                        android:text="Contact Person: Jane Doe (Manager)" />
                 </RelativeLayout>
 
                 <TextView
                     android:id="@+id/textViewContactPhone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Contact Phone: None"
+                    android:text="Contact Phone: (213) 555-1234"
                     android:background="@color/very_light_grey"
                     android:padding="16dp"
                     android:layout_margin="8dp" />
@@ -146,7 +137,7 @@
                         android:id="@+id/textViewSurplusTypes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Types of Surplus Food: None" />
+                        android:text="Types of Surplus Food: Bread, Bagels, Pastries" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -159,7 +150,7 @@
                         android:id="@+id/textViewSurplusQuantity"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Estimated Quantity: None" />
+                        android:text="Estimated Quantity: 50-75 items daily" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -172,7 +163,7 @@
                         android:id="@+id/textViewPickupTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pickup Availability Time: None" />
+                        android:text="Pickup Availability Time: 8:00 PM - 9:00 PM" />
                 </RelativeLayout>
             </LinearLayout>
 
@@ -203,7 +194,7 @@
                         android:id="@+id/textViewPreferredMethod"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Preferred Distribution Method: None" />
+                        android:text="Preferred Distribution Method: Pickup" />
                 </RelativeLayout>
 
             </LinearLayout>
