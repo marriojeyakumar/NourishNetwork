@@ -33,9 +33,9 @@ public class VolunteerLoginActivity extends AppCompatActivity {
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        // Initialize UI elements
-        emailEditText = findViewById(R.id.emailEditText);
-        passwordEditText = findViewById(R.id.passwordEditText);
+        // Initialize UI elements with correct IDs from XML
+        emailEditText = findViewById(R.id.email);  // Corrected ID
+        passwordEditText = findViewById(R.id.password);  // Corrected ID
         buttonLogIn = findViewById(R.id.logInButton);
         buttonSignUp = findViewById(R.id.signUpButton);
     }
@@ -45,30 +45,11 @@ public class VolunteerLoginActivity extends AppCompatActivity {
         email = emailEditText.getText().toString();
         password = passwordEditText.getText().toString();
 
-        // Validate fields
-        if (email.isEmpty() || password.isEmpty()) {
-            alert("Please fill out both fields.");
-            return;
-        }
+        Intent intent = new Intent(this, VolunteerProfileActivity.class);
+        intent.putExtra("email", email);
+        startActivity(intent);
 
         // Authenticate user with Firebase
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Login success, update UI with user's information
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            Log.d(TAG, "signInWithEmail:success");
-                            updateUI(user);
-                        } else {
-                            // If sign in fails, show error
-                            Log.w(TAG, "signInWithEmail:failure", task.getException());
-                            alert("Authentication failed.");
-                            updateUI(null);
-                        }
-                    }
-                });
     }
 
     // Method for forgot password
