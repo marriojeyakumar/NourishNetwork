@@ -60,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:alpha="0.8"
-                    android:text="Hello business owner! Please login below" />
+                    android:text="Hello volunteer organization! Please login below" />
 
                 <View
                     android:layout_width="match_parent"
