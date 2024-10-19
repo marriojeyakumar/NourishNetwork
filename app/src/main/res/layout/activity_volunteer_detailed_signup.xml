@@ -2,9 +2,211 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#99E8C4"
     tools:context=".VolunteerDetailedSignupActivity">
 
+    <LinearLayout
+        android:id="@+id/volunteerInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="146dp"
+            android:layout_weight="1"
+            android:src="@drawable/volunteer_icon" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/formCardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <!-- Organization Information Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organization Information"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#66BB6A"
+                    android:layout_marginBottom="16dp" />
+
+                <EditText
+                    android:id="@+id/editTextOrganizationType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Organization Type"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editTextOrganizationAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Organization Address (including Zip Code)"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editTextContactPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Contact Person Name"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editTextContactEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Contact Email"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/editTextContactPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Contact Phone Number"
+                    android:inputType="phone" />
+
+                <!-- Operating Hours Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Operating Hours"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#66BB6A"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp" />
+
+                <EditText
+                    android:id="@+id/editTextOperatingHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Operating Hours"
+                    android:inputType="text" />
+
+                <!-- Food Needs and Capacity Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Needs and Capacity"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#66BB6A"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp" />
+
+                <EditText
+                    android:id="@+id/editTextTypesOfFoodAccepted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Types of Food Accepted"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editTextFoodStorageCapacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Food Storage Capacity"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editTextEstimatedFoodDemand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Estimated Food Demand"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editTextTransportationAvailability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Transportation Availability"
+                    android:inputType="text" />
+
+                <!-- Food Distribution Plan Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Distribution Plan"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#66BB6A"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp" />
+
+                <EditText
+                    android:id="@+id/editTextWhoFoodServes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Who the Food Will Serve"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editTextDistributionLocations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Distribution Locations"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editTextDistributionTiming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Distribution Timing"
+                    android:inputType="text" />
+
+                <!-- Submit Button -->
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#66BB6A"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="submitForm"
+                    android:text="Submit"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF" />
+
+                <!-- Spacer -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
