@@ -6,7 +6,319 @@
     android:layout_height="match_parent"
     tools:context=".SearchActivity">
 
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:id="@+id/professionalContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <!-- Business 1 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon1"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon1"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="Panera Bread"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName1"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon1"
+                    android:text="Leftover bread, bagels, and pastries"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription1"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon1"
+                    android:text="1234 Wilshire Blvd, Los Angeles, CA 90017"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Business 2 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon2"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon2"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="Whole Foods Market"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName2"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon2"
+                    android:text="Fruits, vegetables, and dairy products"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription2"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon2"
+                    android:text="5678 Sunset Blvd, Los Angeles, CA 90028"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Business 3 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon3"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon3"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="Starbucks"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName3"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon3"
+                    android:text="Leftover sandwiches and baked goods"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription3"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon3"
+                    android:text="3456 Venice Blvd, Los Angeles, CA 90019"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Business 4 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon4"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon4"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="Trader Joe's"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName4"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon4"
+                    android:text="Packaged salads and fresh produce"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription4"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon4"
+                    android:text="9101 Hollywood Blvd, Los Angeles, CA 90046"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Business 5 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon5"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon5"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="Ralphs Grocery"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName5"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon5"
+                    android:text="Meat, dairy, and canned goods"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription5"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon5"
+                    android:text="800 Figueroa St, Los Angeles, CA 90017"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Business 6 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_grey"
+                android:padding="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_icon6"
+                    android:layout_width="60dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textViewName6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/profile_icon6"
+                    android:fontFamily="@font/bunglee"
+                    android:includeFontPadding="false"
+                    android:text="Chipotle"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewName6"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon6"
+                    android:text="Leftover rice, beans, and tortillas"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewLocation6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescription6"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/profile_icon6"
+                    android:text="4321 La Cienega Blvd, Los Angeles, CA 90045"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
