@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:alpha="1"
     android:background="@drawable/login_bg"
-    tools:context=".BusinessSignupActivity">
+    tools:context=".BusinessLoginActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -24,6 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="146dp"
                 android:layout_weight="1"
+                android:alpha="1"
                 app:srcCompat="@drawable/logo" />
         </LinearLayout>
 
@@ -34,7 +37,8 @@
             android:clickable="true"
             android:focusable="true"
             app:cardCornerRadius="36dp"
-            app:layout_constraintBottom_toBottomOf="parent">
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -45,7 +49,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sign Up"
+                    android:text="Welcome"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="@color/green"
                     android:textSize="40sp"
@@ -56,20 +60,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:alpha="0.8"
-                    android:text="Hello business owner! Please create an account below" />
+                    android:text="Hello business owner! Please login below" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="26dp" />
 
                 <TextView
+                    android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Email address"
+                    android:text="Email Address"
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/emailEditText"
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/email_icon"
@@ -86,7 +91,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/passwordEditText"
+                    android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/password_icon"
@@ -94,46 +99,63 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="20dp" />
+                    android:layout_height="10dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Confirm Password"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/confirmPasswordEditText"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/password_icon"
-                    android:inputType="textPassword" />
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:text="Remember me"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:alpha="0.8"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="forgotPassword"
+                        android:text="I forgot my password"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="15dp" />
 
                 <Button
-                    android:id="@+id/signUpButton"
+                    android:id="@+id/logInButton"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:text="Log In"
                     android:backgroundTint="@color/orange"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:onClick="continueSignup"
-                    android:text="Continue"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:onClick="login"/>
 
                 <Button
-                    android:id="@+id/loginButton"
+                    android:id="@+id/signUpButton"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:backgroundTint="@color/orange"
                     android:layout_marginBottom="16dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:onClick="backToLogin"
-                    android:text="Log In"
+                    android:onClick="goToSignup"
+                    android:text="Sign Up"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent" />
 
