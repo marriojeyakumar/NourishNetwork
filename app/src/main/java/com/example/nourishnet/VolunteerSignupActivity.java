@@ -10,21 +10,21 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class VolunteerSignupActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_volunteer_signup);
     }
 
-    public void businessLogin(View view) {
-        Intent intent = new Intent(this, BusinessLoginActivity.class);
+    public void continueSignup(View view) {
+        Intent intent = new Intent(this, VolunteerDetailedSignupActivity.class);
         startActivity(intent);
     }
 
-    public void volunteerLogin(View view) {
-        Intent intent = new Intent(this, VolunteerLoginActivity.class);
+    public void backToLogin(View view) {
+        Intent intent = new Intent(getApplicationContext(), VolunteerLoginActivity.class);
         startActivity(intent);
     }
 }
