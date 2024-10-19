@@ -7,7 +7,7 @@
 
     android:alpha="1"
     android:background="@drawable/login_bg"
-    tools:context=".BusinessLoginActivity">
+    tools:context=".VolunteerLoginActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

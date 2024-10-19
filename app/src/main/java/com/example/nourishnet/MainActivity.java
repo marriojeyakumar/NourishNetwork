@@ -22,4 +22,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BusinessLoginActivity.class);
         startActivity(intent);
     }
+
+    public void volunteerLogin(View view) {
+        Intent intent = new Intent(this, VolunteerLoginActivity.class);
+        startActivity(intent);
+    }
 }
