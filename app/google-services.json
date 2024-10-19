@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1005905520987",
+    "firebase_url": "https://nourish-net-7e87c-default-rtdb.firebaseio.com",
+    "project_id": "nourish-net-7e87c",
+    "storage_bucket": "nourish-net-7e87c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005905520987:android:d929dd020b2f869e22127e",
+        "android_client_info": {
+          "package_name": "com.example.nourishnet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACjpr9Vz8B-bMK9uyoub9RJrlZ0vbUEYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
