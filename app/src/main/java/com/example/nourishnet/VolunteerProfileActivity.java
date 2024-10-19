@@ -91,6 +91,7 @@ public class VolunteerProfileActivity extends AppCompatActivity {
                     textViewTypesOfFoodAccepted.setText("Types of Food Accepted: " + document.getString("typesOfFoodAccepted"));
                     textViewWhoFoodServes.setText("Who the Food Serves: " + document.getString("whoFoodServes"));
                 } else {
+                    System.out.println();
                     Toast.makeText(VolunteerProfileActivity.this, "No such document", Toast.LENGTH_SHORT).show();
                 }
             } else {
